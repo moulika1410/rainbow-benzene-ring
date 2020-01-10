@@ -5,11 +5,11 @@ import turtle
 import playsound
 from playsound import playsound
 playsound('Game-ending-sound-effect.mp3')
-colors = ['red', 'purple', 'blue', 'green', 'orange', 'yellow']
+colors = ['red', 'purple', 'blue', 'green', 'orange', 'yellow','indigo']
 t = turtle.Pen()
 turtle.bgcolor('black')
-for x in range(360):
-    t.pencolor(colors[x%6])
+for x in range(180):
+    t.pencolor(colors[x%7])
     t.width(x/100 + 1)
     t.forward(x)
     t.left(59)
